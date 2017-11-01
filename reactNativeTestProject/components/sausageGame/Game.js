@@ -22,6 +22,10 @@ export default class Game extends Component {
     }
   }
 
+  static navigationOptions = {
+    title: 'Game'
+  };
+
   imgClick = ({nativeEvent: {locationX, locationY}}) => {
     let newUserSausage = this.getUserSausageValues(locationX);
     this.setState({userSausage: newUserSausage});
