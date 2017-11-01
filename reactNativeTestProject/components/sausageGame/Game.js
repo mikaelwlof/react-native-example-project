@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Text, Image, View, TouchableHighlight } from 'react-native';
-import Sausage from './sausage/SausageComponent.js'
+import Sausage from './SausageComponent.js'
 
 
 export default class Game extends Component {
