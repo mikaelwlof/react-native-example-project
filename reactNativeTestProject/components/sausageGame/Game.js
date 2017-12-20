@@ -57,17 +57,20 @@ export default class Game extends Component {
 
   render() {
     return (
-      <View>
-        <Text>Your sausage</Text>
-        <Sausage
-            onClick={(event) => this.imgClick(event)}
-            width = {this.state.userSausage.width}
-            currentPiece = {this.state.userSausage.currentPiece} />
-
-        <Text>Computer sausage</Text>
-        <Sausage
-            width = {this.state.computerSausage.width}
-            currentPiece = {this.state.computerSausage.currentPiece} />
+      <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+        <View>
+          <Text>Your sausage</Text>
+          <Sausage
+              onClick={(event) => this.imgClick(event)}
+              width = {this.state.userSausage.width}
+              currentPiece = {this.state.userSausage.currentPiece} />
+        </View>
+        <View>
+          <Text>Computer sausage</Text>
+          <Sausage
+              width = {this.state.computerSausage.width}
+              currentPiece = {this.state.computerSausage.currentPiece} />
+        </View>
      </View>
     );
   }
